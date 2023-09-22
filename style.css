@@ -193,6 +193,7 @@
     }
 }
 
+/*EXERCISES 12, 13*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -214,6 +215,42 @@
     width: 60px;
     height: 20px;
 }
+
+/*EXERCISE 12*/
+.ex-12-button:hover .ex-12-top-white{
+    animation: move 1s infinite;
+    animation-timing-function: linear;
+    transform: translateX(0);
+}
+
+@keyframes move {
+    
+    50%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-reverse 1s infinite;
+    animation-timing-function: linear;
+    transform: translateX(0);
+}
+
+@keyframes move-reverse {
+    
+    50%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
