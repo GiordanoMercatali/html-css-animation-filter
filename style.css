@@ -51,14 +51,30 @@
     transition: all 2s;
 }
 
-
-
+/*EXERCISE 5*/
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
 }
+
+.ex-5-square:hover {
+    margin: 33px;
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+}
+
+.ex-5-square:active {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    transition: all 2s;
+}
+
+
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
