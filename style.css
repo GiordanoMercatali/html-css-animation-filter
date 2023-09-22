@@ -114,10 +114,23 @@
     transition: all 2s;
 }
 
+/*EXERCISE 9*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
+
+.ex-9-img:hover {
+    margin: 100px 200px;
+    width: 800px;
+    border-radius: 50px;
+    filter: grayscale(50);
+    filter: sepia(50);
+    transition: all 2s;
+}
+
+
 .ex-10-icon {
     font-size: 60px;
 }
