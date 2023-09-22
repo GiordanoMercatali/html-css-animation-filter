@@ -216,9 +216,18 @@
     height: 20px;
 }
 
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
 /*EXERCISE 12*/
 .ex-12-button:hover .ex-12-top-white{
-    animation: move 1s infinite;
+    animation: move 2s;
     animation-timing-function: linear;
     transform: translateX(0);
 }
@@ -235,7 +244,7 @@
 }
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: move-reverse 1s infinite;
+    animation: move-reverse 2s;
     animation-timing-function: linear;
     transform: translateX(0);
 }
@@ -251,11 +260,62 @@
     }
 }
 
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
+
+/*EXERCISE 13*/
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-full 2s;
+    animation-timing-function: linear;
+    transform: translate(0, 0);
+}
+
+@keyframes move-full {
+    
+    20%{
+        transform: translate(150px, 0);
+    }
+
+    40%{
+        transform: translate(150px, 70px);
+    }
+
+    60%{
+        transform: translate(-50px, 70px);
+    }
+
+    80%{
+        transform: translate(-50px, 0);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move-full-reverse 2s;
+    animation-timing-function: linear;
+    transform: translateX(0);
+}
+
+@keyframes move-full-reverse {
+    
+    20%{
+        transform: translate(-150px, 0);
+    }
+
+    40%{
+        transform: translate(-150px, -70px);
+    }
+
+    60%{
+        transform: translate(50px, -70px);
+    }
+
+    80%{
+        transform: translate(50px, 0);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
 }
