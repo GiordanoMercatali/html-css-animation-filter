@@ -17,11 +17,17 @@
     background: red;
 }
 
-/* .ex-2-square:onclick {
-    width: 1000px;
-    transition: all 2s;
-} */
+.ex-2-square:active {
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
 
+.ex-2-square:not(:active)  {
+    width: 100px;
+    transition: all 2s ease-in-out;
+}
+
+/*EXERCISE 3*/
 .ex-3-square {
     width: 100px;
     height: 100px;
